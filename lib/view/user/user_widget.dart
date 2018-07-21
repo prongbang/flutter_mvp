@@ -25,7 +25,7 @@ class UserStateWidget extends StatefulWidget {
   }
 }
 
-class UserListState extends State<UserStateWidget> implements UserContractView {
+class UserListState extends State<UserStateWidget> with WidgetsBindingObserver implements UserContractView {
   UserPresenter _presenter;
 
   List<User> _users;
@@ -38,6 +38,7 @@ class UserListState extends State<UserStateWidget> implements UserContractView {
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addObserver(this);
     _isLoading = true;
     _presenter.bind(this);
     _presenter.loadUser(10);
@@ -83,6 +84,32 @@ class UserListState extends State<UserStateWidget> implements UserContractView {
       _users = response;
       _isLoading = false;
     });
+  }
+
+  @override
+  void dispose() {
+    print("-> dispose");
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+    _presenter.unbind();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    switch (state) {
+      case AppLifecycleState.inactive:
+        print("-> inactive");
+        break;
+      case AppLifecycleState.paused:
+        print("-> paused");
+        break;
+      case AppLifecycleState.resumed:
+        print("-> resumed");
+        break;
+      case AppLifecycleState.suspending:
+        print("-> suspending");
+        break;
+    }
   }
 }
 
