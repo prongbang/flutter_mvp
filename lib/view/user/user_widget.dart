@@ -1,5 +1,8 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_mvp/api/api.dart';
+import 'package:flutter_mvp/di/injector.dart';
 import 'package:flutter_mvp/interactor/user_interactor.dart';
 import 'package:flutter_mvp/model/network_status.dart';
 import 'package:flutter_mvp/model/user.dart';
@@ -32,7 +35,7 @@ class UserListState extends State<UserStateWidget> with WidgetsBindingObserver i
   bool _isLoading;
 
   UserListState() {
-    _presenter = UserPresenter(UserInteractor(ApiService()));
+    _presenter = Injector.provideUserPresenter();
   }
 
   @override
@@ -41,7 +44,7 @@ class UserListState extends State<UserStateWidget> with WidgetsBindingObserver i
     WidgetsBinding.instance.addObserver(this);
     _isLoading = true;
     _presenter.bind(this);
-    _presenter.loadUser(10);
+    _presenter.loadUser(30);
   }
 
   @override
@@ -66,7 +69,7 @@ class UserListState extends State<UserStateWidget> with WidgetsBindingObserver i
 
   @override
   void onError(Exception e) {
-    // TODO: implement onError
+    print("Exception: $e");
   }
 
   @override
