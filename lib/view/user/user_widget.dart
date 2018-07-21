@@ -75,8 +75,12 @@ class UserListState extends State<UserStateWidget> with WidgetsBindingObserver i
   @override
   void onNetwork(NetworkStatus network) {
     if (NetworkStatus.STRONG == network) {
+      print("Network strong");
     } else if (NetworkStatus.WEAK == network) {
-    } else {}
+      print("Network weak");
+    } else {
+      print("Network error");
+    }
   }
 
   @override

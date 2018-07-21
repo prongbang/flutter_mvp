@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="26cfc746-8b63-4cdc-83b5-9138c2b02866" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/lib/di/injector.dart" afterPath="$PROJECT_DIR$/lib/di/injector.dart" />
       <change beforePath="$PROJECT_DIR$/lib/view/user/user_widget.dart" afterPath="$PROJECT_DIR$/lib/view/user/user_widget.dart" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
@@ -46,12 +45,10 @@
       <file leaf-file-name="user_widget.dart" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/view/user/user_widget.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="71" column="23" lean-forward="true" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
+            <state relative-caret-position="209">
+              <caret line="77" column="30" lean-forward="true" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
-                <marker date="1532187317591" expanded="true" signature="898:2956" ph="{...}" />
-                <marker date="1532187317591" expanded="true" signature="1774:2725" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -405,8 +402,6 @@
           <caret line="21" column="76" lean-forward="true" selection-start-line="21" selection-start-column="76" selection-end-line="21" selection-end-column="76" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
-            <marker date="1532187317591" expanded="true" signature="898:2956" ph="{...}" />
-            <marker date="1532187317591" expanded="true" signature="1774:2725" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -628,12 +623,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/view/user/user_widget.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="71" column="23" lean-forward="true" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
+        <state relative-caret-position="209">
+          <caret line="77" column="30" lean-forward="true" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
-            <marker date="1532187317591" expanded="true" signature="898:2956" ph="{...}" />
-            <marker date="1532187317591" expanded="true" signature="1774:2725" ph="{...}" />
           </folding>
         </state>
       </provider>
