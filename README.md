@@ -1,6 +1,6 @@
 # flutter_mvp
 
-Flutter MVP.
+Flutter MVP (Model View Presenter) Architecture
 
 ## Getting Started
 
